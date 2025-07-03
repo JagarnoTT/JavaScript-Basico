@@ -13,6 +13,3 @@ console.log(names);
 console.log(João);
 console.log(names.indexOf("Monica")); // Declarando em qual posição os elementos estão
 console.log(namesIsArray);
-
-
-
