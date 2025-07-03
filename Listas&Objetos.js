@@ -9,7 +9,7 @@ names.pop();
 names.unshift('Andreia');// Adicionando um elemento ao inicio da lista
 console.log(names);
 console.log(João);
-console.log(names.indexOf("Monica"));
+console.log(names.indexOf("Monica")); // Declarando em qual posição os elementos estão
 
 
 
