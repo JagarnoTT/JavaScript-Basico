@@ -35,7 +35,22 @@ const {FirstName, LastName, age, Hobbies, Dog} = person; // Declaração de vari
 
 // person.Dog = 'Simba'; //Adicionando objeto novo as lista de objetos
 
+
+const tasks = [
+    {
+    Dia: 1,
+    Tarefa1: 'Estudar',
+},
+{
+    Dia: 2,
+    Tarefa2: 'Trabalhar',
+},
+{
+    Dia: 3,
+    Tarefa3: 'Treinar',
+    }
+];
+
 console.log(`My name is ${FirstName} ${LastName} and my prefire hobbies are ${Hobbies[0]} and my dog is called ${Dog.Name} and have ${Dog.Age} old !!`);
 console.log(person);
-
-
+console.log(`My first focus of week in the ${tasks[0].Dia} day is ${tasks[1].Tarefa2} and my next task is ${tasks[0].Tarefa1} and the last tasks of day is ${tasks[2].Tarefa3} `);
