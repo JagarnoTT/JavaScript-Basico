@@ -36,7 +36,7 @@ const {FirstName, LastName, age, Hobbies, Dog} = person; // Declaração de vari
 // person.Dog = 'Simba'; //Adicionando objeto novo as lista de objetos
 
 
-const tasks = [
+const tasks = [ // Declarando listas de objetos dentro de uma lista geral
     {
     Dia: 1,
     Tarefa1: 'Estudar',
@@ -53,4 +53,4 @@ const tasks = [
 
 console.log(`My name is ${FirstName} ${LastName} and my prefire hobbies are ${Hobbies[0]} and my dog is called ${Dog.Name} and have ${Dog.Age} old !!`);
 console.log(person);
-console.log(`My first focus of week in the ${tasks[0].Dia} day is ${tasks[1].Tarefa2} and my next task is ${tasks[0].Tarefa1} and the last tasks of day is ${tasks[2].Tarefa3} `);
+console.log(`My first focus of week in the ${tasks[0].Dia} day is ${tasks[1].Tarefa2} and my next task is ${tasks[0].Tarefa1} and the last tasks of day is ${tasks[2].Tarefa3} `); //Declarando qual objeto e qual elemento dentro de cada objeto deve ser exibido
