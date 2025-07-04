@@ -15,16 +15,27 @@ console.log(names.indexOf("Monica")); // Declarando em qual posição os element
 console.log(namesIsArray);
 
 const person = { // Declaração de objeto
-    Name: 'Ericles',
+    FirstName: 'Ericles',
     LastName: 'Soares',
     age: 28,
     weight: 85.0,
     height: 1.72,
-    hobbies: ["Play games","Coding","Watch movies"] // Concatenando mais de um elemento em uma lista
+    Hobbies: ["Play games","Coding","Watch movies"], // Concatenando mais de um elemento em uma lista
+    Dog: {
+        Name: 'Buldogue',
+        Age: 3
+    }
 };
 
-const Name = person.Name; // Declarando qual a valor a variavel deve pegar
-const LastName = person.LastName;
-const Hobbies = person.hobbies[0] // Declarando qual objeto e qual elemento da lista deve ser exibido
+//const Name = person.Name; // Declarando qual a valor a variavel deve pegar
+//const LastName = person.LastName;
+//const Hobbies = person.hobbies[0] // Declarando qual objeto e qual elemento da lista deve ser exibido
 
-console.log(`My name is ${Name} ${LastName} and my prefire hobbies are ${Hobbies}`);
+const {FirstName, LastName, age, Hobbies, Dog} = person; // Declaração de variavel que irá armazenar os elementos
+
+// person.Dog = 'Simba'; //Adicionando objeto novo as lista de objetos
+
+console.log(`My name is ${FirstName} ${LastName} and my prefire hobbies are ${Hobbies[0]} and my dog is called ${Dog.Name} and have ${Dog.Age} old !!`);
+console.log(person);
+
+
