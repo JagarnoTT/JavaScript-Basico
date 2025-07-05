@@ -13,8 +13,8 @@ const cars = ['BMW', 'Mercedes', 'Toyota', 'Ford', 'Honda', 'Wolksvagen', 'Audi'
 //     }
 // );
 
-let i = 0;
-while (i < 10){
-    console.log(i)
-    i++;
+let index = 0;
+
+while(index < 10){
+    console.log(cars);
 }
