@@ -1,27 +1,43 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SentinelBot - Analisador de Logs de Segurança</title>
-    <link rel="stylesheet" href="CSS/ProjectBasic.css">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="/CSS/ProjectBasic.css">
 </head>
 <body>
-    <div class = "container">
-        <h1>Sentinel Bot🤖 </h1>
-                <p>Descreva seus logs para a analise:</p>
-                    <textarea id="logInput" placeholder="Ex: [2025-07-05 10:00:01] INFO: User 'ericles' logged in successfully from 192.168.1.100&#10;[2025-07-05 10:00:05] ERROR: Failed login attempt for user 'admin' from 203.0.113.5&#10;[2025-07-05 10:00:10] WARNING: Suspicious activity detected from 198.51.100.20"></textarea>
-                    <button id="AnalisarBtn">Analisar logs</button>
-                    
-                    <div class="results">
-                        <h2>Exibindo abaixo os resultados</h2>
-                        <div id="Summary"></div>
-                        <div id="DetailedLogs"></div>
-                            <h3> Logs Filtrados</h3>
-                        <div id="FilteredLogs"></div>
-                </div>
+    <div class="container">
+    <div class="display">
+        0
+    </div>
+    
+    <div class="buttonsOperators">
+    <div class="btnClear" data-operator="clear">C</div>
+    <div class="btnOperator" data-operator="divide">/</div>
+    <div class="btnOperator" data-operator="multiply">*</div>
+    <div class="btnOperator" data-operator="sum">+</div>
+    <div class="btnOperator" data-operator="subtract">-</div>
         </div>
-        <script src="JS/ProjectBasic.js">
-            
-        </script>
+
+    <div class="buttonsNumbers">
+        <div class="btnNumber" data-number="1">1</div>
+        <div class="btnNumber" data-number="2">2</div>
+        <div class="btnNumber" data-number="3">3</div>
+        <div class="btnNumber" data-number="4">4</div>
+        <div class="btnNumber" data-number="5">5</div>
+        <div class="btnNumber" data-number="6">6</div>
+        <div class="btnNumber" data-number="7">7</div>
+        <div class="btnNumber" data-number="8">8</div>
+        <div class="btnNumber" data-number="9">9</div>
+        <div class="btnNumber" data-number="0">0</div>
+        <div class="btnNumber" data-number=".">.</div>
+        <div class="btnEqual" data-operator="equals">=</div>
+    </div>
+    <div class="switchTheme">
+
+    </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
