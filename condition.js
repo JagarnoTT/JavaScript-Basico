@@ -12,52 +12,86 @@
 // let sun = sum === 3 ? "true" : "false";
 // console.log(sun)
 
-let idade = -1;
+// let idade = -1;
 
-if(idade < 16 && idade >= 1){
-    console.log(`Não é permitido votar com ${idade} anos!`)
-}
-else if (idade >= 16 && idade <18){
-    console.log(`É opcional que o individuo com idade ${idade} vote!`)
-}
-else if (idade >= 18 && idade <= 59){
-    console.log(`É obrigatório que o individuo com idade ${idade} anos vote!`)
-}
-else if (idade >59){
-    console.log(`Não é obrigatório que o individuo com idade ${idade} anos vote, devido a sua idade avançada!`)
-}
-else if(typeof idade !== "number" || idade < 0){ // Condicional para evitar erros de digitação ou elemento string e menos que 0
-    console.log(`Idade inválida!`)
-};
+// if(idade < 16 && idade >= 1){
+//     console.log(`Não é permitido votar com ${idade} anos!`)
+// }
+// else if (idade >= 16 && idade <18){
+//     console.log(`É opcional que o individuo com idade ${idade} vote!`)
+// }
+// else if (idade >= 18 && idade <= 59){
+//     console.log(`É obrigatório que o individuo com idade ${idade} anos vote!`)
+// }
+// else if (idade >59){
+//     console.log(`Não é obrigatório que o individuo com idade ${idade} anos vote, devido a sua idade avançada!`)
+// }
+// else if(typeof idade !== "number" || idade < 0){ // Condicional para evitar erros de digitação ou elemento string e menos que 0
+//     console.log(`Idade inválida!`)
+// };
 
-let dianumero = 3;
-let nomeDoDia;
+// let dianumero = 3;
+// let nomeDoDia;
 
-switch (dianumero){
-    case 1: 
-        nomeDoDia = "domingo";
-        break;
-    case 2: 
-    nomeDoDia = "segunda-feira";
-        break;
-    case 3: 
-    nomeDoDia = "terça-feira";
-        break;
-    case 4: 
-    nomeDoDia = "quarta-feira";
-        break;
-    case 5: 
-    nomeDoDia = "quinta-feira";
-        break;
-    case 6: 
-    nomeDoDia = "sexta-feira";
-        break;
-    case 7: 
-    nomeDoDia = "sábado";
-        break;
-    default:
-        nomeDoDia = "Dia da semana não encontrado!"
-        break;
-}
+// switch (dianumero){
+//     case 1: 
+//         nomeDoDia = "domingo";
+//         break;
+//     case 2: 
+//     nomeDoDia = "segunda-feira";
+//         break;
+//     case 3: 
+//     nomeDoDia = "terça-feira";
+//         break;
+//     case 4: 
+//     nomeDoDia = "quarta-feira";
+//         break;
+//     case 5: 
+//     nomeDoDia = "quinta-feira";
+//         break;
+//     case 6: 
+//     nomeDoDia = "sexta-feira";
+//         break;
+//     case 7: 
+//     nomeDoDia = "sábado";
+//         break;
+//     default:
+//         nomeDoDia = "Dia da semana não encontrado!"
+//         break;
+// }
 
-console.log(nomeDoDia);
+// console.log(nomeDoDia);
+
+// function getNomeDoDia(numero){
+//     let nomedodia;
+
+//     switch(numero){
+//         case 1:
+//             nomedodia = "domingo";
+//             break;
+//         case 2:
+//             nomedodia = "segunda";
+//             break;
+//         case 3:
+//             nomedodia = 'terça-feira';
+//             break;
+//         case 4:
+//             nomedodia = 'quarta-feira';
+//             break
+//         case 5:
+//             nomedodia = 'quinta-feira';
+//             break;
+//         case 6: 
+//             nomedodia = 'sexta-feira';
+//             break;
+//         case 7:
+//             nomedodia = 'sábado';
+//             break
+
+//         default:
+//             nomedodia = 'Dia da semana não encontrado!'
+//             break;
+//     }
+//     return nomedodia; //Retornando o valor da variavel para imprimir
+// }
+// console.log(getNomeDoDia(2))
