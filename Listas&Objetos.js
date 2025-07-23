@@ -106,7 +106,7 @@
 // }
 // console.log(CadaCidade(2));
 
-// let cidade = ['paranavai', 'maringa','curitiba', 'blumenau', 'florianópolis'];
+ let cidade = ['paranavai', 'maringa','curitiba', 'blumenau', 'florianópolis'];
 
 // function CadaCidade(indice){
 
@@ -122,3 +122,21 @@
 // console.log(CadaCidade('curitiba'))
 // console.log(CadaCidade('OSASCO'));
 // console.log(CadaCidade('blumenau'));
+
+function CadaCidade(EscolherCidade){
+
+    EscolherCidade = EscolherCidade.toLowerCase();
+
+    let minusculaCidade = cidade.map(c=> c.toLowerCase());
+
+    if(minusculaCidade.includes(EscolherCidade)){
+        return `✅ A cidade ${EscolherCidade} está na lista`
+    }
+    else{
+        return `❌ A cidade ${EscolherCidade} não está na lista`
+    }
+}
+console.log(CadaCidade('PaRaNaVaI'));
+console.log(CadaCidade('curiTIBA'));
+console.log(CadaCidade('BLUmenau'));
+console.log(CadaCidade('OSASCO'));
