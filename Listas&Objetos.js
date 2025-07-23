@@ -127,13 +127,13 @@ function CadaCidade(EscolherCidade){
 
     EscolherCidade = EscolherCidade.toLowerCase();
 
-    let minusculaCidade = cidade.map(c=> c.toLowerCase());
+    let Cidadeformatada = EscolherCidade[0].toUpperCase() + EscolherCidade.slice(1).toLowerCase();
 
-    if(minusculaCidade.includes(EscolherCidade)){
-        return `✅ A cidade ${EscolherCidade} está na lista`
+    if(Cidadeformatada.includes(EscolherCidade)){
+        return `✅ A cidade ${Cidadeformatada} está na lista`
     }
     else{
-        return `❌ A cidade ${EscolherCidade} não está na lista`
+        return `❌ A cidade ${Cidadeformatada} não está na lista`
     }
 }
 console.log(CadaCidade('PaRaNaVaI'));
