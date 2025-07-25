@@ -86,6 +86,6 @@ function BuscarPorAutor(autor){
     if(resultado.length === 0){ // Se caso a condição solicitada não tiver nenhum caractere, me retornará false
         return `❌ O ${autor} não existe`
     }
-    return resultado.map(l=>`${l.autor} esreveu os livros ${l.titulo}`)//Utilizando o map para ler se há algum livro que atende a condição
+    return resultado.map(l=>`✅ ${l.autor} escreveu os livros 📖 ${l.titulo}`).join('\n')//Utilizando o map para ler se há algum livro que atende a condição
 }
 console.log(BuscarPorAutor("J.R.R. Tolkien"));
