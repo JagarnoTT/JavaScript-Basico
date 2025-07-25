@@ -95,3 +95,43 @@
 //     return nomedodia; //Retornando o valor da variavel para imprimir
 // }
 // console.log(getNomeDoDia(2))
+// let nomes = ["pedro", "maria", "joão", "ana", "lucas"];
+
+// for(let i = 0; i < nomes.length; i++){
+//     console.log(nomes[i]);
+// }
+
+// for(let nome of nomes){
+//     console.log(`Olá, ${nome}, seja bem vindo(a)!`);
+// }
+
+//  let cidades = ['paranavai', 'maringá', 'curitiba', 'blumenau', 'florianópolis'];
+
+//  for(let cidade of cidades){
+//      console.log(`Olá, você chegou em ${cidade}, seja bem vindo(a)!`);
+// }
+
+// function CadaCidade(indice){
+//     let cidade
+//     switch(indice){
+//         case 0:
+//             cidade = 'Vocês está em Paranavai'
+//             break
+//         case 1:
+//             cidade = 'Vocês está em Maringá'
+//             break;
+//         case 2:
+//             cidade = 'Vocês está em Curitiba, bem vindo'
+//             break;
+//         case 3:
+//             cidade = 'Vocês está em blumenau'
+//             break;
+//         case 4:
+//             cidade = 'Vocês está em florianópolis'
+//             break;
+//         default:
+//             console.log('Você está em uma cidade que não está na lista');
+//     }
+//     return cidade;
+// }
+// console.log(CadaCidade(2));
