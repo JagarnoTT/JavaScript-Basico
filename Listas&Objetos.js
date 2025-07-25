@@ -64,3 +64,28 @@
 // console.log(frutas[frutas.length -1]); // Comando para caso o arry mude, sempre pegará o ultimo objeto
 // console.log(frutas.length)
 // console.log(frutas.includes('morango'));
+
+let livro = {
+    titulo: "Harry Potter",
+    autor: "J.K. Rowling",
+    ano: 1997,
+};
+// console.log(`O livro ${livro.titulo} foi escrito por ${livro.autor} em ${livro.ano}`);
+
+let livros = [{
+    titulo: "Harry Potter",autor: "J.K. Rowling",ano: 1997,},
+{titulo: "O Senhor dos Anéis",autor: "J.R.R. Tolkien",ano: 1954,},
+{titulo: "O Hobbit",autor: "J.R.R. Tolkien",ano: 1937,}
+]
+// for(let Livros of livros){
+//     console.log(`O livro ${Livros.titulo} foi escrito por ${Livros.autor} no ano de ${Livros.ano}`)
+// }
+function BuscarPorAutor(autor){
+    let resultado = livros.filter(l => l.autor === autor) //Criando um novo array com os livros que atendem a condição
+
+    if(resultado.length === 0){ // Se caso a condição solicitada não tiver nenhum caractere, me retornará false
+        return `❌ O ${autor} não existe`
+    }
+    return resultado.map(l=>`${l.autor} esreveu os livros ${l.titulo}`)//Utilizando o map para ler se há algum livro que atende a condição
+}
+console.log(BuscarPorAutor("J.R.R. Tolkien"));
