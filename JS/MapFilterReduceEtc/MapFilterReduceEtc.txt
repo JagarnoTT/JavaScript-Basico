@@ -1,0 +1,8 @@
+1 - map() Faz uma varredura no elemento inserido;
+2 - filter()- filtra os elementos contidos no objeto, array etc...;
+3 - slice() - determina por onde vai começar a contar ex: slice(1, 3) - vai começar a contar a partir do elemento 1;
+4 - find() - encontra o primeiro item que bate com a condição proposta;
+5 - some() - retorna true se pelo menos um item bate com a condição; 
+6 - every() - retrna true se todos os items batem com a condição;
+7 - reduce()- Soma todos os objetos para retornar apenas um valor(util com somas e etc...);
+
