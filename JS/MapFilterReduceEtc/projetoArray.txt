@@ -1,0 +1,5 @@
+1 - Criar Arrays, contendo os objetos que serão manipulados
+2 - Criar a function com o programa lendo as opçoes para o usuario escolher
+3 - Criar a function que irá abrigar o uso do um print para deixar o visual bem contextual e uma operação usando forEach dentro dessa operação com forEach, através de uma Arrowfunction vamos realizar a operação de enumerar os livros através do contador
+4 - Criar uma function que irá realizar a operação de busca pelo titulo que o usuario solicitar através de uma condição (if) retornaremos a resposta ao usuario;
+5 - 
