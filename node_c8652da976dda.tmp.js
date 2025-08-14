@@ -64,30 +64,30 @@
 //     console.log('❌Acesso negado - Sua conta está bloqueada');
 // };
 
-// let escolha = 0; // Declarando variavel
+let escolha = 0; // Declarando variavel
 
-// for(i = escolha; i <= 3; i++){ // loop for
-// escolha++
+for(i = escolha; i <= 3; i++){ // loop for
+escolha++
 
-// do{ // loop do while
-//     switch(escolha){ // loop switch
-//         case 1:
-//             console.log('👋 Você escolheu a opção 1!');
-//             break;
-//         case 2:
-//             console.log('👋 Você escolheu a opção 2!');
-//             break;
-//         case 3:
-//             console.log('👋 Você escolheu a opçao 3!');
-//             break;
-//         default:
-//             console.log('❌ Opção inválida!');
-//     }
-// } while(escolha === 0){
+do{ // loop do while
+    switch(escolha){ // loop switch
+        case 1:
+            console.log('👋 Você escolheu a opção 1!');
+            break;
+        case 2:
+            console.log('👋 Você escolheu a opção 2!');
+            break;
+        case 3:
+            console.log('👋 Você escolheu a opçao 3!');
+            break;
+        default:
+            console.log('❌ Opção inválida!');
+    }
+} while(escolha === 1){
 
-//     console.log(`A escolha do usuario foi ${escolha}`)
+    console.log(`A escolha do usuario foi ${escolha}`)
     
-//     }
-// }
+    }
+}
 
 
