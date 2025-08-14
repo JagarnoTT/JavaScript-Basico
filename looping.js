@@ -68,7 +68,6 @@
 
 // for(i = escolha; i <= 3; i++){ // loop for
 // escolha++
-
 // do{ // loop do while
 //     switch(escolha){ // loop switch
 //         case 1:
@@ -83,11 +82,22 @@
 //         default:
 //             console.log('❌ Opção inválida!');
 //     }
-// } while(escolha === 0){
-
+// } while(escolha === 0)
 //     console.log(`A escolha do usuario foi ${escolha}`)
+
     
-//     }
+// let lista = ['mouse', 'teclado', 'monitor', 'fones de ouvido'];
+
+// for(listas of lista){
+//     console.log(listas);;
 // }
 
+// let contador = 1;
+
+// while(true){
+//     console.log(`rodando... ${contador}`);
+//     contador++;
+
+//     if (contador === 10) break;
+// }
 
