@@ -19,3 +19,31 @@
 //     i++;
 // }
 
+let numero = prompt('Digite um numero: ');
+numero = Number(numero);
+
+
+if (numero === 0){
+    console.log('O número é 0');
+}
+else if(numero < 0){
+    console.log('O número é negativo');
+}
+else{
+    console.log('O número é positivo');
+};
+
+if (numero > 0){
+    for(let i = 1; i<= numero; i++){
+        if(i % 5 === 0) continue;
+        console.log(i);
+    };
+}
+else if(numero <= 0){
+    for(i = numero; i < 0; i++){
+        if (i % 5 === 0) continue;
+        console.log(i);
+    };
+}else{
+    console.log('O 0 não pode ser contabilizado');
+}
