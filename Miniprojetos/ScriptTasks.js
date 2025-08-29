@@ -30,6 +30,8 @@ const ValidadeTasks = () =>{ // Função para verificar a tarefa
     NewTask.appendChild(TrashTask);//Declarando nós
 
     input.value = ''; //Limpando input inserir tasks
+
+    uptadeLocalStorage();
 }
 
 const HandleClick = (TaskContent) =>{ //Adicionando função de interação
@@ -40,6 +42,7 @@ const HandleClick = (TaskContent) =>{ //Adicionando função de interação
         if(TaskClicked) //Condição
             task.firstChild.classList.toggle('Complete')
     }
+    uptadeLocalStorage();
 }
 
 const HandleTaskDelete = (NewTask, TaskContent) =>{
@@ -51,7 +54,7 @@ const HandleTaskDelete = (NewTask, TaskContent) =>{
             NewTask.remove()
         }
      }
-    
+    uptadeLocalStorage();
 }
 const InputChangeValid = () =>{
         const InputisValid = ValidateInput();
@@ -60,10 +63,34 @@ const InputChangeValid = () =>{
             return input.classList.remove('error');
         }
     }
+const uptadeLocalStorage = () =>{
+    const tasks = addTask.children;
+
+
+
+    const localStorageTasks = [...tasks].map(task =>{
+        const content = task.firstChild
+        const isCompleted = content.classList.contains('completed');
+
+
+        return {description: content.innerText, isCompletes: isCompleted}
+    });
+
+    localStorage.setItem('tasks', JSON.stringify(localStorageTasks))
+};
+const refreshTasksUsingLocalStorage = () =>{
+    const tasksFromLocalStorage = JSON.parse(localStorage.getItem('tasks'))
+
+    console.log({tasksFromLocalStorage})
+}
+refreshTasksUsingLocalStorage();
 
 button.addEventListener('click',() => ValidadeTasks());//Função para validar click no botão
 input.addEventListener('input', () => {InputChangeValid()
-    }
+}
+
+    
+
 );
 
 
