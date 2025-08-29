@@ -88,9 +88,4 @@ refreshTasksUsingLocalStorage();
 button.addEventListener('click',() => ValidadeTasks());//Função para validar click no botão
 input.addEventListener('input', () => {InputChangeValid()
 }
-
-    
-
 );
-
-
