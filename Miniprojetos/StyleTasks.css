@@ -63,6 +63,7 @@ button:hover{
 .error::placeholder{
     color: red;
 }
+
 i{
     color: red;
     cursor: pointer;

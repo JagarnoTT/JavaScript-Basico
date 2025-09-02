@@ -51,23 +51,26 @@
 //     return n * fatorial(n -1)
 // }
 
-// console.log(fator(3));
+// // console.log(fator(3));
 
-function meuCarro(carro){
-    carro.marca = "Toyota";
+// function meuCarro(carro){
+//     carro.marca = "Toyota";
 
-}
+// }
 
-const meucarro = {marca: 'Honda', modelo: 'Civic'}
+// const meucarro = {marca: 'Honda', modelo: 'Civic'}
 
-meuCarro(meucarro);
-console.log(meucarro);
-console.log(meucarro.marca);
+// meuCarro(meucarro);
+// console.log(meucarro);
+// console.log(meucarro.marca);
 
-function Compras(item){
-item.proteina = 'carne';
-}
-const itens = {proteina: 'frango', carboidrato: 'arroz'}
-Compras(itens)
-console.log(itens)
+// function Compras(item){
+// item.proteina = 'carne';
+// }
+// const itens = {proteina: 'frango', carboidrato: 'arroz'}
+// Compras(itens)
+// console.log(itens)
+    const calcularArea = (base, altura) => base * altura
+    console.log(`A area é: ${calcularArea(2, 3)}`)
+    
     

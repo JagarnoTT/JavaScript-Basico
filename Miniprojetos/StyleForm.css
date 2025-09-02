@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+body{
+    background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    background-color: rgb(218, 218, 218);
+    padding: 20px;
+}
+.main-container{
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+.form{
+    padding: 20px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
