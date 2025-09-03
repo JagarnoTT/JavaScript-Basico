@@ -1,32 +1,86 @@
 *{
-    padding: 0;
     margin: 0;
-    font-family: "Nunito", sans-serif;
+    padding: 0;
+    font-family: "Outfit", sans-serif;
 }
+
 body{
-    background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(180deg,#1AC4E1 0%, #ED0DFD 100% );
 }
-h2{
-    background-color: rgb(218, 218, 218);
-    padding: 20px;
-}
-.main-container{
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
+.container{
+    background-color: #f5f6f7cc;
+    border-radius: 20px;
+    overflow: hidden;  
     width: 400px;
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px rgba(0, 0, 0, 0.178);
 }
-.form{
+header{
+    background-color: #ed0dfd96;
+    font-size: 1.2em;
+    text-align: center;
     padding: 20px;
+    padding-inline: 30px;
+    
 }
 .form-control{
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
+    padding: 10px;
+    margin-inline: 10px;
+    
 }
+.form-control input{
+    font-size: 1.1em;
+    padding-block: 5px;
+    padding-inline: 10px;
+    width: 350px;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+.form-control label{
+    font-size: 1.3em;
+}
+.form-control i {
+    visibility: hidden;
+}
+.form-control small{
+    visibility: hidden;
+}
+button{
+    width: 370px;;
+    padding-block: 10px;
+    margin-block: 30px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ED0DFD;
+    border-radius: 20px;
+    border: none;
+}
+
+/*Error and Success*/
+.form-control.error input
+{
+    border: solid 2px #f70202;
+}
+.form-control.error i.fa-circle-exclamation{
+    color: red;
+    visibility: visible;
+}
+.form-control.success input{
+    border: solid 2px #00f70c;
+}
+.form-control.success i.fa-circle-check{
+    color: #00f70c;
+    visibility: visible;
+}
+
+
+
