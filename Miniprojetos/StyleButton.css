@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #EBEBEB;
+    
+}
+button{
+    border-radius: 10px;
+    border: none;
+    background-color: #EF7722;
+    transition: background-color 0.5s ease, 1.3s ease;
+    filter: drop-shadow(1px 1px 1px black);
+}
+button:hover{
+    cursor: pointer;
+    animation: mudacor 4s infinite alternate;
+}
+
+@keyframes mudacor{
+    0% {background:#787A91;}
+    25% {background: #141E61;}
+    50% {background: #0F044C;}
+    100% {background: #161616;}
+}
+#icon{
+    font-size: 3rem;
+    padding-inline: 8vw;
+    padding-block: 5vh;
+}
+
+#icon:hover{
+    animation: icon 4s infinite alternate;
+}
+@keyframes icon{
+    0%{color: #9929EA;}
+    50%{color: #CC66DA;}
+    100%{color: #FAEB92;}
+}
