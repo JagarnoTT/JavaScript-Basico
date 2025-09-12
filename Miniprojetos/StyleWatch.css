@@ -58,13 +58,50 @@ body{
 .campo-tarefa{
     background-color: rgba(253, 253, 253, 0.103);
     margin-block: 20px;
-    height: 30vh;
+    height: 50vh;
     width: 52vw;
+    border-radius: 10px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color: #4B70F5
+}
+::-webkit-scrollbar-thumb{
+    background-color: #3A506B
+}
+/* polegar ao passar o mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0072ff, #004080);
+  cursor: pointer;
+}
+.error{
+    border: solid 1px red !important;
+}
+.error::placeholder{
+    color: red;
+}
+.DivTarefas{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #3A506B;
+    padding: 20px;
     border-radius: 20px;
 }
-li{
-    list-style: none;
-    font-size: 1.5em;
-    color: black;
-    margin: 20px 20px;
+i{
+    cursor: pointer;
 }
+p{
+    cursor: pointer;
+}
+.completo{
+    text-decoration: line-through;
+    color: rgb(0, 0, 0);
+    filter: drop-shadow(1px 1px 1px #03C988);
+}
+

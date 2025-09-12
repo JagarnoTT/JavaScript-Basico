@@ -37,3 +37,56 @@ else{
 setInterval(AtualizarHorario, 1000);
 
 AtualizarHorario();
+
+const Tarefa = document.querySelector('.Tarefa');
+const botão = document.querySelector('.add-Tarefa');
+const TarefasCampo = document.querySelector('.Tarefas-lista')
+
+const ValidarTarefa = () => Tarefa.value.trim().length > 0;
+
+const TarefaInValida = () =>{
+    const ArmazenarTarefa = ValidarTarefa();
+
+    if (!ArmazenarTarefa){
+        return Tarefa.classList.add('error')
+    }
+
+    const containerTarefas = document.createElement('div')
+    containerTarefas.classList.add('DivTarefas');
+
+    const paragrafo = document.createElement('p');
+    paragrafo.textContent = Tarefa.value;
+
+    paragrafo.addEventListener('click', ()=> ConcluirTarefa(paragrafo));
+
+    const icon = document.createElement('i')
+    icon.classList.add('fa-solid');
+    icon.classList.add('fa-trash');
+
+    icon.addEventListener('click',() => RemoverTarefa(containerTarefas));
+
+    TarefasCampo.appendChild(containerTarefas);
+    containerTarefas.appendChild(paragrafo);
+    containerTarefas.appendChild(icon);
+
+    Tarefa.value = '';
+};
+
+const ConcluirTarefa = (paragrafo) =>{
+    paragrafo.classList.toggle('completo')
+    
+}
+const RemoverTarefa = (containerTarefas)=>{
+    containerTarefas.remove()
+}
+
+const TarefaValida = () =>{
+    const ArmazenarTarefa = ValidarTarefa();
+
+    if(ArmazenarTarefa){
+        return Tarefa.classList.remove('error');
+    }
+}
+
+botão.addEventListener('click', () => TarefaInValida());
+Tarefa.addEventListener('input',()=> TarefaValida());
