@@ -73,11 +73,11 @@ const TarefaInValida = () =>{
 };
 
 const ConcluirTarefa = (paragrafo) =>{
-    paragrafo.classList.toggle('completo')
+    paragrafo.classList.toggle('completo');
     
 }
 const RemoverTarefa = (containerTarefas)=>{
-    containerTarefas.remove()
+    containerTarefas.remove();
 }
 
 const TarefaValida = () =>{
