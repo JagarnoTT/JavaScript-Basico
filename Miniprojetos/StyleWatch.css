@@ -62,6 +62,7 @@ body{
     width: 52vw;
     border-radius: 10px;
     overflow: scroll;
+    box-shadow: -2px -2px 1px white;
 }
 
 ::-webkit-scrollbar{
@@ -96,6 +97,9 @@ body{
 i{
     cursor: pointer;
 }
+i:hover{
+    color: red;
+}
 p{
     cursor: pointer;
 }
@@ -104,4 +108,3 @@ p{
     color: rgb(0, 0, 0);
     filter: drop-shadow(1px 1px 1px #03C988);
 }
-
